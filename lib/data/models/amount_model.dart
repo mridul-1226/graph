@@ -6,7 +6,7 @@ class AmountModel extends AmountEntity {
   factory AmountModel.fromJson(Map<String, dynamic> json) {
     return AmountModel(
       date: DateTime.parse(json['label'] as String),
-      price: (json['y']).toDouble() * 5000,
+      price: (json['y']).toDouble() * 250,
     );
   }
 }
